@@ -1,5 +1,4 @@
 import React from 'react';
-import { useSelector } from 'react-redux';
 import {Switch, Route, Redirect} from 'react-router-dom';
 import {privateRoutes, publicRoutes, RouteNames} from "../router";
 import { useTypedSelector } from '../hooks/useTypedSelector';
