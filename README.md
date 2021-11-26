@@ -12,6 +12,7 @@
 - login: **kevin**, password: **123**
 
 ##### Application tree:
+```
 _**public**_
 --| favicon.ico
 --| index.html
@@ -57,4 +58,4 @@ _**src**_
 App.tsx
 index.css
 index.tsx
-
+```
