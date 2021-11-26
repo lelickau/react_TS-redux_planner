@@ -26,7 +26,7 @@ const Navbar: FC = () => {
                                 onClick={logout}
                                 key={1}
                             >
-                                Выйти
+                                Log Out
                             </Menu.Item>
                         </Menu>
                     </>
@@ -36,7 +36,7 @@ const Navbar: FC = () => {
                             onClick={() => router.push(RouteNames.LOGIN)}
                             key={1}
                         >
-                            Логин
+                            Log In
                         </Menu.Item>
                     </Menu>
                 }

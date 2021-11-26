@@ -36,11 +36,11 @@ const Event: FC = () => {
             <EventCalendar events={events}/>
             <Row justify="center">
                 <Button onClick={showModal}>
-                    Добавить событие
+                Add an event
                 </Button>
             </Row>
             <Modal
-                title="Добавить событие"
+                title="Add an event"
                 visible={modalVisible}
                 footer={null}
                 onCancel={closeModel}

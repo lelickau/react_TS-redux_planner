@@ -35,7 +35,7 @@ const EventForm: FC<EventFormProps> = (props) => {
     return (
         <Form onFinish={submitForm}>
             <Form.Item
-                label="Описание события"
+                label="Description"
                 name="description"
                 rules={[rules.required()]}
             >
@@ -45,16 +45,16 @@ const EventForm: FC<EventFormProps> = (props) => {
                 />
             </Form.Item>
             <Form.Item
-                label="Дата события"
+                label="Date of the event"
                 name="date"
-                rules={[rules.required(), rules.isDateAfter("Нельзя создать событие в прошлом")]}
+                rules={[rules.required(), rules.isDateAfter("Can't create an event in the past")]}
             >
                 <DatePicker
                     onChange={(date) => selectDate(date)}
                 />
             </Form.Item>
             <Form.Item
-                label="Выберите гостя"
+                label="Select a guest"
                 name="guest"
                 rules={[rules.required()]}
             >
@@ -69,7 +69,7 @@ const EventForm: FC<EventFormProps> = (props) => {
             <Row justify="end">
                 <Form.Item>
                     <Button type="primary" htmlType="submit">
-                        Создать
+                        Create
                     </Button>
                 </Form.Item>
             </Row>

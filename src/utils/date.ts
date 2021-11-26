@@ -1,4 +1,3 @@
-import { Moment } from 'moment';
 export const formatDate = (date: Date): string => {
     const year = date.getFullYear()
     const month = date.getMonth() < 9 ? `0${date.getMonth() + 1}` : date.getMonth() + 1
