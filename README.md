@@ -13,46 +13,46 @@
 
 ##### Application tree:
 ```
-_**public**_
+public/
 --| favicon.ico
 --| index.html
 --| manifest.json
 --| users.json (mock server DB)
 
-_**src**_
---| **api**
+src/
+--| api/
 ----| UserServices.ts (axios, AxiosResponse)
---| **components**
+--| components/
 ----| AppRouter.tsx
 ----| EventCalendar.tsx
 ----| EventForm.tsx
 ----| LoginForm.tsx
 ----| Navbar.tsx
---| **hooks**
+--| hooks/
 ----| useActions.ts (useDispatch, bindActionCreators)
 ----| useTypedSelector.ts (autocomplete useSelector state)
---| **models**
+--| models/
 ----| IEvent.ts
 ----| IUser.ts
---| **pages**
+--| pages/
 ----| Event.tsx
 ----| Login.tsx
---| **router**
+--| router/
 ----| index.ts
---| **store**
-----| **reducers**
-------| **auth**
+--| store/
+----| reducers/
+------| auth/
 --------| actionCreators.ts
 --------| index.ts (authReducer)
 --------| types.ts
-------| **event**
+------| event/
 --------| actionCreators.ts
 --------| index.ts (EventReducer)
 --------| types.ts
 ------| actionsCreators.ts (all actions creators)
 ------| index.ts (unification reducers ./auth and ./event)
 ----| index.ts (store, createStore)
---| **utils**
+--| utils/
 ----| date.ts (formatDate)
 ----| rules.ts (rules attribute for components "antd")
 App.tsx
